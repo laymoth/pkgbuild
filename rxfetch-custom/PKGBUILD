@@ -1,0 +1,16 @@
+# Maintainer:  Ali <laymoth@pm.me>
+
+pkgname=rxfetch-custom
+pkgver=1.0
+pkgrel=1
+pkgdesc="A custom system info fetching tool"
+arch=('any')
+url='https://github.com/Mangeshrex/rxfetch'
+license=('MIT')
+conflicts=('rxfetch')
+source=('rxfetch')
+sha256sums=('SKIP')
+
+package() {
+  install -D -t "$pkgdir/usr/bin" "$srcdir/rxfetch"
+}
